@@ -55,18 +55,10 @@ These variables are needed in the .env file
 2. Create a new cluster.
 3. Click connect to get connection string,
 4. Add connection string to MONGODB_URI in .env file.
+5. Place the file in yur project's root directory.
 
 ### Install dependencies
-1. In Git Bash terminal, type npm init -y
-2. Type 'npm install' before each of the following:
-* express
-* mongoose
-* bcrypt
-* dotenv
-* jsonwebtoken
-* morgan
-* helmet
-* express-validator
+1. Type 'npm install' 
 
 ### After installing dependencies, you can run the app locally. In the terminal, run the following:
 
