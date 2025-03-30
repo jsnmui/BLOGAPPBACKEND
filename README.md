@@ -70,8 +70,7 @@ These variables are needed in the .env file
 
 ### After installing dependencies, you can run the app locally. In the terminal, run the following:
 
-'''
-npm start
+```npm start
 
 ## Endpoints, Parameters, Schema
 ### Routes
