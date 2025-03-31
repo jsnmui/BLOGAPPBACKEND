@@ -8,7 +8,6 @@ const mongoConfig =require('./config/mongoConfig')
 const blogs = require('./routes/blogs')
 const users = require('./routes/users')
 const auth = require('./routes/auth')
-const apidocs =  require('./routes/apidocs')
 
 const app = express()
 const PORT = process.env.PORT || 5000
@@ -23,7 +22,6 @@ app.use(cors())
 app.use('/blogs', blogs)   //handles blog requests
 app.use('/users', users)   //requests on user accounts  
 app.use('/auth', auth)     // login an registration requests
-app.use('/apidocs', apidocs) // basic info about api for swagger
 
 //* Root route for the APP
 app.get('/', (req, res) => {
