@@ -16,7 +16,7 @@ const blogSchema = mongoose.Schema({
     created_at: {
         type: Date,
     
-        default: Date.now()
+        default: Date.now
     },
    
     blog_title: {
@@ -27,43 +27,6 @@ const blogSchema = mongoose.Schema({
     blog_content: {
         type: String,
         required: true
-    },
-
-    comments: [{
-           
-        creator_id: {
-            type: mongoose.Schema.Types.ObjectId,    // links the comment to user
-            ref: 'user'                              // refers to the user model
-        },
-    
-        created_at: {
-            type: Date,
-            default: Date.now()
-        },
-       
-        comment: {
-            type: String
-            
-        }
-    
-    }],
-
-    likesHistory:[{                                   //tracks who liked this blog post  
-
-        user_id: {
-            type: mongoose.Schema.Types.ObjectId,    // links the like to user
-            ref: 'user'
-                                         // refers to the user model
-        },
-    
-        like: {
-            type: Boolean
-        }
-    }],
-
-    likes:{                                       // likes counter
-        type: Number,
-        default: 0
     },
    
     private: {
