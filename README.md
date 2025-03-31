@@ -58,7 +58,7 @@ These variables are needed in the .env file
 5. Place the file in yur project's root directory.
 
 ### Install dependencies
-1. Type 'npm install' 
+Type <pre>npm install</pre> 
 
 ### After installing dependencies, you can run the app locally. In the terminal, run the following:
 
